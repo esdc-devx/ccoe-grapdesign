@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>SDLC &amp; Product Delivery Guidebook (Prototype)
+    </title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description"
+        content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+    <link rel="alternate" hreflang="fr" href="index-fr.html">
+    <link href="../GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_43/wet-boew/css/theme.min.css">
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_43/cdts/cdtsapps.css">
+    <noscript>
+        <link rel="stylesheet" href="../wet-boew/css/noscript.min.css" /></noscript>
+</head>
+
+<body vocab="http://schema.org/" resource="#wb-webpage" typeof="WebPage">
+    <nav>
+        <ul id="wb-tphp">
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+            </li>
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div id="wb-bnr" class="container">
+			<div class="row">
+				<section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
+					<h2 class="wb-inv">Language selection</h2>
+					<ul class="list-inline mrgn-bttm-0">
+						<li>
+							<a lang="fr" hreflang="fr" href="#!">
+								<span class="hidden-xs">Français</span>
+								<abbr title="Français"
+									class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" resource="#wb-publisher"
+					typeof="GovernmentOrganization">
+					<a href="#!" property="url"><img src="../GCWeb/assets/sig-blk-en.svg"
+							alt="Government of Canada" property="logo"><span class="wb-inv"> / <span
+								lang="fr">Gouvernement du Canada</span></span></a>
+					<meta property="name" content="Government of Canada">
+					<meta property="areaServed" typeof="Country" content="Canada">
+					<link property="logo" href="../GCWeb/assets/wmms-blk.svg">
+				</div>
+				<section id="wb-srch"
+					class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+					<h2>Search</h2>
+					<form action="#" method="post" name="cse-search-box" role="search">
+						<div class="form-group wb-srch-qry">
+							<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
+							<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q"
+								type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
+							<datalist id="wb-srch-q-ac">
+							</datalist>
+						</div>
+						<div class="form-group submit">
+							<button type="" id="" class="btn btn-primary btn-small"
+								name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span
+									class="wb-inv">Search</span></button>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+    </header>
+
+    <!-- App bar -->
+    <div class="app-bar">
+        <div class="container">
+            <div class="row">
+                <section class="col-xs-12 col-sm-7">
+                    <h2 class="wb-inv">Name of Web application</h2><a class="app-name" href="/">Software Development Life Cycle</a>
+                </section>
+                <nav class="col-sm-5 hidden-xs hidden-print">
+                    <h2 class="wb-inv">Account menu</h2>
+                    <ul class="app-list-account list-unstyled">
+                        <li><a href="/eng/account/Account.SignIn" class="btn"><span class="glyphicon glyphicon-off"
+                                    aria-hidden="true"></span> Sign in</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- General navigation: replaces the side bar one -->
+    <nav id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
+        class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
+        typeof="SiteNavigationElement">
+        <div class="pnl-strt container visible-md visible-lg nvbar">
+            <h2>Topics menu</h2>
+            <div class="row">
+                <ul class="list-inline menu" role="menubar">
+                    <li><a href="./" class="item wb-navcurr" tabindex="0" aria-posinset="1" aria-setsize="7"
+                            role="menuitem">Home</a></li>
+                    <li><a href="#!" class="item" tabindex="-1" aria-posinset="2" aria-setsize="7"
+                            role="menuitem">News</a></li>
+                    <li><a href="#!" class="item" tabindex="-1" aria-posinset="3" aria-setsize="7"
+                            role="menuitem">Community ideas</a></li>
+                    <li><a href="#!" class="item" tabindex="-1" aria-posinset="4" aria-setsize="7"
+                            role="menuitem">Help & support</a></li>
+                    <li><a href="#!" class="item" tabindex="-1" aria-posinset="5" aria-setsize="7"
+                            role="menuitem">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- extra styles -->
+    <style>
+        a.icon-wrapper {
+            text-decoration: none;
+            color: #333;
+            transition: all .15s ease-out;
+            display: block;
+        }
+
+        a.icon-wrapper:hover {
+            opacity: .8;
+        }
+
+        .icon {
+            padding: 2em;
+            display: inline-block;
+            border-radius: 1.5em;
+            width:120px;
+            text-align: center;
+        }
+
+        .d-block {
+            display: block;
+        }
+
+        .row-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+
+    <!-- Guidance resources: grid -->
+    <section class="mrgn-bttm-lg">
+        <div class="container">            
+            <h1 class="page-header">The SDLC & Product Delivery Guidebook</h1>           
+            <p>The Software Development Life Cycle (SDLC) & Product Delivery Guidebook provides hand-on information on SDLC related topics including framework guidance, Continuous Integration / Continuous Delivery (CI/CD) best practices, automation, testing, and reference solution code samples.</p>
+            <div class="row mrgn-tp-lg row-flex">
+                <div class="col-xs-6 col-sm-4 mrgn-bttm-lg">
+                    <a href="./subpage.html" class="icon-wrapper">
+                        <div class="bg-info text-primary icon">
+                            <i class="fas fa-coins fa-3x"></i>
+                        </div>
+                        <span class="h3 mrgn-tp-md d-block">PMLC Framework</span>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 mrgn-bttm-lg">
+                    <a href="./subpage.html" class="icon-wrapper">
+                        <div class="bg-info text-primary icon">
+                            <i class="fas fa-desktop fa-3x"></i>
+                        </div>
+                        <span class="h3 mrgn-tp-md d-block">SDLC Framework</span>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 mrgn-bttm-lg">
+                    <a href="./subpage.html" class="icon-wrapper">
+                        <div class="bg-info text-primary icon">
+                            <i class="fas fa-project-diagram fa-3x"></i>
+                        </div>
+                        <span class="h3 mrgn-tp-md d-block"> SDLC & CI/CD Diagram</span>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 mrgn-bttm-lg">
+                    <a href="./subpage.html" class="icon-wrapper">
+                        <div class="bg-info text-primary icon">
+                            <i class="fas fa-shoe-prints fa-3x"></i>
+                        </div>
+                        <span class="h3 mrgn-tp-md d-block">SDLC Workflow</span>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 mrgn-bttm-lg">
+                    <a href="./subpage.html" class="icon-wrapper">
+                        <div class="bg-info text-primary icon">
+                            <i class="fas fa-laptop-code fa-3x"></i>
+                        </div>
+                        <span class="h3 mrgn-tp-md d-block">CI/CD Workflow</span>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 mrgn-bttm-lg">
+                    <a href="./subpage.html" class="icon-wrapper">
+                        <div class="bg-info text-primary icon">
+                            <i class="fas fa-infinity fa-3x"></i>
+                        </div>
+                        <span class="h3 mrgn-tp-md d-block">DevOps Capabilities</span>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 mrgn-bttm-lg">
+                    <a href="./subpage.html" class="icon-wrapper">
+                        <div class="bg-info text-primary icon">
+                            <i class="fas fa-users fa-3x"></i>
+                        </div>
+                        <span class="h3 mrgn-tp-md d-block">Knowledge Base</span>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 mrgn-bttm-lg">
+                    <a href="./subpage.html" class="icon-wrapper">
+                        <div class="bg-info text-primary icon">
+                            <i class="fas fa-cloud-upload-alt fa-3x"></i>
+                        </div>
+                        <span class="h3 mrgn-tp-md d-block">Cloud Strategy</span>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 mrgn-bttm-lg">
+                    <a href="./subpage.html" class="icon-wrapper">
+                        <div class="bg-info text-primary icon">
+                            <i class="fas fa-book fa-3x"></i>
+                        </div>
+                        <span class="h3 mrgn-tp-md d-block">Cloud Roadmap</span>
+                    </a>
+                </div>
+            </div>
+            <section class="alert alert-info">
+                <p><strong>   Please note that some site features are only available after having signed-in.</strong></p>  
+              </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="wb-info">
+        <div class="brand">
+            <div class="container">
+                <div class="row">
+                    <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+                        <h2 class="wb-inv">About this site</h2>
+                        <ul>
+                            <!-- <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+                            <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+                            <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li> -->
+                            <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a>
+                            </li>
+                            <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+                        </ul>
+                    </nav>
+                    <div class="col-xs-6 visible-sm visible-xs tofpg">
+                        <a href="#wb-cont">Top of page <span class="glyphicon glyphicon-chevron-up"></span></a>
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+                        <img src="../GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_43/wet-boew/js/wet-boew.min.js"></script>
+    <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_43/wet-boew/js/theme.min.js"></script>
+</body>
+
+</html>
